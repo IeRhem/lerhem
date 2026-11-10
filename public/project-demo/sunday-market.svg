@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#eee9df"/>
+  <rect x="48" y="40" width="1104" height="720" rx="18" fill="#fbfaf7"/>
+  <path d="M66 126h1068" stroke="#d8d1c5" stroke-width="2"/>
+  <circle cx="95" cy="82" r="13" fill="#899078"/>
+  <text x="126" y="91" fill="#30362d" font-family="Georgia,serif" font-size="29">sunday market</text>
+  <text x="823" y="88" fill="#68675f" font-family="Arial,sans-serif" font-size="15" letter-spacing="3">SHOP  JOURNAL  ABOUT</text>
+  <rect x="66" y="127" width="1068" height="480" fill="#d9d4c8"/>
+  <rect x="66" y="127" width="450" height="480" fill="#c6c6b5"/>
+  <circle cx="924" cy="376" r="156" fill="#aaa58f"/>
+  <path d="M759 431h330l-29 122H790z" fill="#776f5e"/>
+  <path d="M818 430c10-113 57-165 91-165 39 0 79 58 88 165" fill="#b9a98e"/>
+  <path d="M854 326c21-26 39-41 64-47m-30 52c11-38 28-62 49-79" fill="none" stroke="#697358" stroke-width="13" stroke-linecap="round"/>
+  <text x="112" y="273" fill="#343a30" font-family="Georgia,serif" font-size="59">Make room</text>
+  <text x="112" y="340" fill="#343a30" font-family="Georgia,serif" font-size="59">for slower</text>
+  <text x="112" y="407" fill="#343a30" font-family="Georgia,serif" font-size="59">mornings.</text>
+  <text x="114" y="454" fill="#53564b" font-family="Arial,sans-serif" font-size="19">Thoughtful objects for everyday rituals.</text>
+  <rect x="112" y="487" width="186" height="53" rx="4" fill="#69735f"/>
+  <text x="139" y="521" fill="#fff" font-family="Arial,sans-serif" font-size="16">EXPLORE THE SHOP</text>
+  <text x="86" y="671" fill="#343a30" font-family="Georgia,serif" font-size="31">Objects with a story</text>
+  <text x="87" y="706" fill="#77766e" font-family="Arial,sans-serif" font-size="16">LINEN  ·  CERAMICS  ·  HOME</text>
+  <rect x="865" y="651" width="196" height="77" rx="8" fill="#e7e2d7"/>
+  <rect x="882" y="664" width="58" height="51" rx="4" fill="#b9a98e"/>
+  <rect x="949" y="664" width="94" height="8" rx="4" fill="#96988a"/>
+  <rect x="949" y="681" width="70" height="7" rx="3" fill="#c0bcaf"/>
+  <rect x="949" y="697" width="47" height="7" rx="3" fill="#c0bcaf"/>
+</svg>

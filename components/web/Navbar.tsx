@@ -1,13 +1,13 @@
 "use client";
 
 import {
-  IconChevronRight,
   IconMenu3,
   IconPlus,
 } from "@tabler/icons-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import CTAButton from "@/components/shared/CTAButton";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -97,12 +97,7 @@ export default function Navbar() {
               );
             })}
           </nav>
-          <Link href="/contact" className="cta">
-            GET IN TOUCH
-            <div className="icon">
-              <IconChevronRight stroke={2} />
-            </div>
-          </Link>
+          <CTAButton />
         </div>
       </header>
 
@@ -193,17 +188,13 @@ export default function Navbar() {
         </div>
 
         {mobileMenuOpen && (
-          <Link
-            href="/contact"
-            tabIndex={mobileMenuOpen ? undefined : -1}
-            className="cta w-full justify-between py-1 pl-4 pr-1 text-sm font-medium normal-case text-foreground"
+          <CTAButton
+            className="cta w-full justify-between py-1 pl-20 pr-1 text-md font-medium text-foreground uppercase"
+            iconClassName="icon bg-background p-2 text-foreground"
             onClick={() => setMobileMenuOpen(false)}
           >
             Get in touch
-            <div className="icon bg-background p-2 text-foreground">
-              <IconChevronRight stroke={2} />
-            </div>
-          </Link>
+          </CTAButton>
         )}
       </div>
     </>

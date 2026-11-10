@@ -136,7 +136,48 @@
   .icon {
     @apply bg-foreground text-background rounded-lg p-2.5;
   }
-  #heading {
+  #heading,
+  .section-heading {
     @apply text-6xl font-heading font-bold text-foreground;
+  }
+}
+
+.project-mobile-toggle,
+.project-mobile-read-more,
+.project-desktop-link {
+  display: none;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .project-mobile-toggle {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    display: block;
+    cursor: pointer;
+  }
+
+  .project-card[data-expanded="true"] .project-mobile-toggle {
+    bottom: 4.5rem;
+  }
+
+  .project-mobile-read-more {
+    position: relative;
+    z-index: 20;
+    display: inline-flex;
+  }
+
+  .project-card[data-expanded="false"] .project-mobile-read-more {
+    display: none;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .project-desktop-link {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    display: block;
+    cursor: none;
   }
 }

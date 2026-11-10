@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#e3eeec"/>
+  <rect x="48" y="42" width="1104" height="716" rx="20" fill="#fbfcfa"/>
+  <text x="91" y="103" fill="#183a38" font-family="Georgia,serif" font-size="30">open road</text>
+  <text x="829" y="99" fill="#52706b" font-family="Arial,sans-serif" font-size="15" letter-spacing="2">DESTINATIONS   JOURNAL   SAVED</text>
+  <rect x="72" y="137" width="1056" height="354" rx="14" fill="#c7d9d3"/>
+  <path d="M72 340l208-136 167 119 188-172 182 166 171-128 140 95v207H72z" fill="#8cae9f"/>
+  <path d="M72 398l211-116 168 107 185-121 185 116 171-90 136 82v115H72z" fill="#628b7b"/>
+  <path d="M72 441l236-89 192 70 170-82 209 86 137-53 151 48v90H72z" fill="#3c7062"/>
+  <circle cx="936" cy="225" r="38" fill="#f1d59d"/>
+  <rect x="118" y="185" width="441" height="250" rx="12" fill="#fbfcfa" opacity=".96"/>
+  <text x="153" y="232" fill="#24443e" font-family="Arial,sans-serif" font-size="14" letter-spacing="2">FIND YOUR NEXT ESCAPE</text>
+  <text x="153" y="284" fill="#183a38" font-family="Georgia,serif" font-size="36">Somewhere</text>
+  <text x="153" y="326" fill="#183a38" font-family="Georgia,serif" font-size="36">a little quieter.</text>
+  <rect x="153" y="354" width="328" height="47" rx="6" fill="#fff" stroke="#d9e2dd" stroke-width="2"/>
+  <circle cx="177" cy="377" r="7" fill="#527c70"/>
+  <text x="196" y="382" fill="#62746e" font-family="Arial,sans-serif" font-size="14">Where do you want to go?</text>
+  <text x="89" y="555" fill="#183a38" font-family="Georgia,serif" font-size="29">Places worth the journey</text>
+  <text x="91" y="583" fill="#70827b" font-family="Arial,sans-serif" font-size="15">A few ideas for your next long weekend.</text>
+  <rect x="88" y="612" width="322" height="108" rx="10" fill="#eff3ef"/>
+  <rect x="100" y="624" width="110" height="84" rx="7" fill="#9bb6a5"/>
+  <path d="M100 678l38-29 25 21 24-19 23 14v43H100z" fill="#648d78"/>
+  <text x="227" y="656" fill="#27443a" font-family="Arial,sans-serif" font-size="15" font-weight="700">The mountain cabin</text>
+  <text x="227" y="683" fill="#738279" font-family="Arial,sans-serif" font-size="13">3 nights · From $240</text>
+  <rect x="438" y="612" width="322" height="108" rx="10" fill="#eff3ef"/>
+  <rect x="450" y="624" width="110" height="84" rx="7" fill="#d6c6a9"/>
+  <path d="M450 680h110v28H450z" fill="#a69679"/>
+  <circle cx="532" cy="648" r="13" fill="#f2dfa9"/>
+  <text x="577" y="656" fill="#27443a" font-family="Arial,sans-serif" font-size="15" font-weight="700">A quiet coastal town</text>
+  <text x="577" y="683" fill="#738279" font-family="Arial,sans-serif" font-size="13">2 nights · From $180</text>
+  <rect x="788" y="612" width="322" height="108" rx="10" fill="#eff3ef"/>
+  <rect x="800" y="624" width="110" height="84" rx="7" fill="#c3d0c0"/>
+  <path d="M800 692c23-34 46-34 66-4 17-28 31-23 44 2v18H800z" fill="#759583"/>
+  <text x="927" y="656" fill="#27443a" font-family="Arial,sans-serif" font-size="15" font-weight="700">The forest hideaway</text>
+  <text x="927" y="683" fill="#738279" font-family="Arial,sans-serif" font-size="13">4 nights · From $310</text>
+</svg>
