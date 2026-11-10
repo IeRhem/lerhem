@@ -65,15 +65,15 @@ export default function Home() {
           requirements into systems that run in production. Hand me an idea;
           I’ll give it life
         </p>
-        <div data-reveal className="mt-5 flex flex-col lg:items-center lg:flex-row gap-3 text-lg font-light">
-          <div className="flex items-center gap-2">
+        <div className="mt-5 flex flex-col lg:items-center lg:flex-row gap-3 text-lg font-light">
+          <div data-reveal className="flex items-center gap-2">
             <div
               aria-hidden="true"
               className="size-2 rounded-full bg-foreground"
             />
             <span>Freelance Developer</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div data-reveal className="flex items-center gap-2">
             <div
               aria-hidden="true"
               className="size-2 rounded-full bg-foreground"
@@ -88,7 +88,7 @@ export default function Home() {
 
       <section className="mt-20">
         <h2 data-reveal id="heading">Services</h2>
-        <div data-reveal className="mt-10">
+        <div className="mt-10">
           <ServiceCards />
         </div>
       </section>
@@ -98,7 +98,7 @@ export default function Home() {
 
       <section className="mt-20">
         <h2 data-reveal id="heading">Selected Projects</h2>
-        <div data-reveal className="mt-10">
+        <div className="mt-10">
           <ProjectCards
             projects={
               process.env.NODE_ENV === "development" ? demoProjects : []
@@ -113,29 +113,29 @@ export default function Home() {
         className="relative mt-20 overflow-hidden bg-background z-0 lg:aspect-[1.75]"
       >
         <div data-reveal className="relative z-20 px-2 pt-2 sm:px-6 lg:absolute lg:inset-x-0 lg:top-0 lg:flex lg:flex-col lg:items-start lg:px-0 lg:pt-12">
-          <h2 className="text-foreground" id="heading">
+          <h2 data-reveal className="text-foreground" id="heading">
             About me
           </h2>
           <div className="mt-5 max-w-2xl text-base leading-relaxed sm:text-lg">
-            <p>
+            <p data-reveal>
               I’m leRhem
               <span className="text-muted-foreground">
                 {" "}
                 &lt;Rhema Joseph&gt;
               </span>
               , a full-stack developer based in Taraba, Nigeria 🇳🇬
-            </p>
-            <p>
+            </p >
+            <p data-reveal>
               I build the systems startups and businesses actually need to trust
               — auth, payments, and data that doesn’t break when it matters.
             </p>
-            <p>
+            <p data-reveal>
               During the week, I’m building production web apps in Next.js,
               React, and TypeScript — wiring up everything from Paystack
               payments to secure file storage, so clients get something that
               ships, not a prototype.
             </p>
-            <p>
+            <p data-reveal>
               On weekends, I’m usually deep in Bible study, a good book, or
               picking up some new skill.
             </p>
@@ -159,7 +159,7 @@ export default function Home() {
       <section className="relative isolate z-20 mt-20 overflow-hidden">
         <section className="">
           <h2 data-reveal id="heading">Journal</h2>
-          <div data-reveal>
+          <div>
           <JournalCards
             entries={
               process.env.NODE_ENV === "development" ? demoJournalEntries : []
@@ -179,7 +179,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div data-reveal className="flex items-center justify-between text-white">
+          <div className="flex items-center justify-between text-white">
             <div className="flex gap-4">
               {socialLinks.map((link, index) => (
                 <Link href={link.href} key={index}>
