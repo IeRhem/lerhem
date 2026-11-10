@@ -196,7 +196,7 @@ export default function Navbar() {
           <Link
             href="/contact"
             tabIndex={mobileMenuOpen ? undefined : -1}
-            className="cta w-full justify-between py-1 pl-4 pr-1 text-sm font-medium normal-case text-foreground"
+            className="cta w-full justify-between py-1 pl-20 pr-1 text-md font-medium text-foreground uppercase"
             onClick={() => setMobileMenuOpen(false)}
           >
             Get in touch
