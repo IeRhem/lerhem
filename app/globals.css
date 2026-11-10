@@ -136,7 +136,8 @@
   .icon {
     @apply bg-foreground text-background rounded-lg p-2.5;
   }
-  #heading {
+  #heading,
+  .section-heading {
     @apply text-6xl font-heading font-bold text-foreground;
   }
 }

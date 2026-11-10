@@ -11,26 +11,23 @@ export interface JournalEntryData {
   date: string;
   image: ImageProps["src"];
   imageAlt: string;
+  href?: string;
 }
 
-function JournalCard({ id, title, date, image, imageAlt }: JournalEntryData) {
+export default function JournalCard({
+  title,
+  date,
+  image,
+  imageAlt,
+  href,
+}: JournalEntryData) {
   const [cursorPosition, setCursorPosition] = useState<{
     x: number;
     y: number;
   } | null>(null);
 
-  return (
-    <Link
-      href={`/journal/${id}`}
-      aria-label={`Read ${title}`}
-      className="flex items-center gap-2 lg:gap-4 rounded-xl bg-background p-2 pr-2 md:pr-6 lg:pr-6 text-foreground cursor-none"
-      onPointerMove={(event) => {
-        if (event.pointerType === "mouse") {
-          setCursorPosition({ x: event.clientX, y: event.clientY });
-        }
-      }}
-      onPointerLeave={() => setCursorPosition(null)}
-    >
+  const content = (
+    <>
       <div className="relative size-16 shrink-0 overflow-hidden rounded-lg bg-secondary/20 sm:size-20">
         <Image
           src={image}
@@ -41,20 +38,21 @@ function JournalCard({ id, title, date, image, imageAlt }: JournalEntryData) {
         />
       </div>
 
-      <div className="flex justify-between gap-2 lg:gap-4 w-full items-center">
-        <h3 className="max-w-50 min-w-0 md:max-w-md lg:max-w-lg w-full truncate font-medium text-lg">
+      <div className="flex w-full items-center justify-between gap-2 lg:gap-4">
+        <h3 className="max-w-50 min-w-0 w-full truncate text-lg font-medium md:max-w-md lg:max-w-lg">
           {title}
         </h3>
 
         <div>
           <time
             dateTime={date}
-            className="shrink-0 text-sm text-muted-foreground hidden lg:block lg:text-base"
+            className="hidden shrink-0 text-sm text-muted-foreground lg:block lg:text-base"
           >
             {new Date(date).toLocaleDateString("en-GB", {
               day: "numeric",
               month: "long",
               year: "numeric",
+              timeZone: "UTC",
             })}
           </time>
         </div>
@@ -73,22 +71,28 @@ function JournalCard({ id, title, date, image, imageAlt }: JournalEntryData) {
           Click me
         </span>
       )}
-    </Link>
+    </>
   );
-}
+  const className =
+    "flex items-center gap-2 rounded-xl bg-background p-2 pr-2 text-foreground md:pr-6 lg:gap-4 lg:pr-6";
 
-export default function JournalCards({
-  entries,
-}: {
-  entries?: JournalEntryData[];
-}) {
-  if (!entries?.length) return null;
+  if (!href) {
+    return <article className={className}>{content}</article>;
+  }
 
   return (
-    <div className="mt-10 flex flex-col gap-3 w-full">
-      {entries.map((entry) => (
-        <JournalCard key={entry.id} {...entry} />
-      ))}
-    </div>
+    <Link
+      href={href}
+      aria-label={`Read ${title}`}
+      className={`${className} cursor-none`}
+      onPointerMove={(event) => {
+        if (event.pointerType === "mouse") {
+          setCursorPosition({ x: event.clientX, y: event.clientY });
+        }
+      }}
+      onPointerLeave={() => setCursorPosition(null)}
+    >
+      {content}
+    </Link>
   );
 }

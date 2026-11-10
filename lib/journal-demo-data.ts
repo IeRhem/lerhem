@@ -1,4 +1,4 @@
-import type { JournalEntryData } from "@/components/web/JournalCard";
+import type { JournalEntryData } from "@/components/shared/JournalCard";
 
 export const demoJournalEntries: JournalEntryData[] = [
   {
@@ -23,4 +23,3 @@ export const demoJournalEntries: JournalEntryData[] = [
     imageAlt: "Geometric UI design tokens and component primitives",
   },
 ];
-
